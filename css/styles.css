@@ -1,0 +1,397 @@
+
+html,body{
+	color:white;
+	 margin:0;
+	 padding:0;
+}
+
+body {
+	background-color: #455043;
+	font-family:'Montserrat', sans-serif;
+
+}
+
+figcaption {
+	font-size:10px;
+	text-align:center;
+}
+
+
+.navigation {
+	background-color: #455043;
+	height: 50px;
+
+	/* inicio animação*/
+		animation-name: navegacao;
+		animation-duration: 3s;
+	/* fim animação*/
+}
+
+.navigation ul {
+	list-style:none;
+	padding:0;
+	text-align:right;
+	height:50px;
+}
+
+.navigation li {
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: 100;
+	margin-top: -10px;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: white;
+}
+.navigation a:hover {
+	color: #d37c61;
+}
+
+.navigation li.threeline-icon {
+	display:none;
+}
+
+.navigation li.threeline-icon:hover {
+	color: #d37c61;
+	cursor: pointer;
+}
+
+.capa {
+	color:white;
+	vertical-align:top;
+	margin-left:150px;
+
+}
+
+.capa span {
+	color: #d37c61;
+	display:block;
+}
+
+.capa div {
+	display: inline-block;
+	height: 650px;
+}
+
+ .profile-pic {
+	 width: 40%;
+	 text-align: center;
+
+	 /* animação*/
+
+	 	animation-name: profile-capa;
+	 	animation-duration: 2s;
+
+	 /* fim da animação */
+}
+
+.profile-pic img {
+	width: 350px;
+	border-radius: 350px;
+	margin-top: 100px;
+}
+
+.profile-title {
+	vertical-align: top;
+	width: 59%;
+
+		/* animação*/
+
+ 		animation-name: titulo-capa;
+ 		animation-duration: 2s;
+
+ 		/* fim da animação */
+}
+
+.profile-title h1 {
+	font-size: 58px;
+	margin-top: 200px;
+	text-transform: uppercase;
+	line-height: 56px;
+}
+
+.profile-title h2 {
+	font-size: 18px;
+	font-weight: 100;
+	margin-top: -26px;
+
+}
+
+/*  Página de Currículo */
+
+.main {
+	padding: 80px 170px;
+
+	/*inicio da animação */
+
+	animation-name: conteudo;
+	animation-duration: 2s;
+
+	/*fim da animação */
+
+}
+
+.cv-pic {
+	float: right;
+	width: 200px;
+
+}
+
+.main h1 {
+	color: white;
+	font-weight: normal;
+}
+
+.main h2 {
+	text-transform: uppercase;
+	color: white;
+	font-weight: normal;
+	font-size: 16px;
+	margin-top: 30px;
+ }
+
+ .main h3 {
+ 	color: #d37c61;
+ 	text-transform: uppercase;
+ 	font-size: 14px;
+ }
+
+ .main h4 {
+ 	font-size:10px;
+ 	text-transform: uppercase;
+ }
+
+ .main p { 
+ 	color: white;
+ 	font-weight: 100;
+ 	font-size: 18px;
+ 	line-height: 24px;
+ 	text-align: justify;
+ }
+
+ .main i {
+ 	color:orange;
+ }
+
+.main a {
+	color: #d37c61;
+	text-decoration: none;
+}
+.caminho {
+	list-style: none;
+	color: grey;
+	padding: 0;
+
+}
+
+.caminho li {
+	display: inline-block;
+
+}
+
+.caminho a {
+	color:#d37c61;
+
+}
+
+/* Página de Contato */
+
+.social-img  {
+	width: 50px;
+	margin-right: 10px;
+}
+
+/* Página de Portfolio */
+.miniatura {
+	width:300px;
+	height:300px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-size: contain;
+	overflow: hidden;
+}
+
+.miniatura a {
+	text-decoration: none;
+
+}
+
+.blackbox {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0; 
+	transition:2s;
+	padding-top: 120px;
+	text-align: center;
+}
+
+.blackbox:hover {
+	opacity: 0.8;	
+	transition: 1s;
+
+}
+
+.blackbox h1 {
+	font-size: 16px;
+	color: #d37c61;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.blackbox h2 {
+	font-weight: 100;
+	text-transform: none;
+	margin-top: 0;
+}
+
+/* Página do Modelo de trabalho */
+
+.fotos-projetos {
+	width:100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.back-link {
+	color: #d37c61;
+}
+
+
+
+/* animações */
+
+ @keyframes profile-capa {
+	0%  {opacity:0; transform: translate(0px,20px)}
+	100% {opacity:1; transform: translate(0px,0px)}
+}
+	
+@keyframes titulo-capa {
+	0%  {opacity:0; transform: translate(0px,-20px)}
+	100% {opacity:1; transform: translate(0px,0px)}
+}
+
+@keyframes conteudo {
+	0%  {opacity:0; transform: translate(-20px,0px)}
+	100% {opacity:1; transform: translate(0px,0px)}	
+}
+
+@keyframes navegacao {
+	0%  {opacity:0}
+	50% {opacity:0}
+	100% {opacity:1}	
+}
+
+
+/* Responsivo */
+
+
+@media (max-width:1000px) {
+
+
+.navigation li{
+	display: none;
+}
+
+.navigation li.threeline-icon {
+	display: inline-block;
+}
+
+.capa div {
+	display:block;
+	height: auto;
+}
+
+.profile-pic {
+	width:100%;
+}
+
+
+.profile-pic img {
+	margin-top: 0;
+	max-width: 50%;
+}
+
+.profile-title {
+	width: 100%;
+	text-align: center;
+}
+
+.profile-title h1 {
+	margin-top: 20px;
+	font-size: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.profile-title h2 {
+	margin-top: -15px;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+}
+
+
+.main {
+	padding: 10px 5% 45px 5%;
+
+}
+
+.main p {
+	text-align: left;
+	font-height: 30px;
+
+}
+
+.caminho li {
+	font-size: 12px;
+
+}
+
+.cv-pic {
+	float: none;
+	max-width: 130%;
+	margin-right: 0px;
+	margin-bottom: 10px;
+
+}
+
+.miniatura {
+  	max-width: 100%:
+  	background-size: auto 100%;
+}
+
+ .blackbox {
+ 	opacity: 0.8;
+ }
+
+
+.menujs {
+	height: auto;
+
+}
+
+.menujs ul{
+	height: auto;
+	text-align: center;
+	padding-right: 15%;
+	padding-left: 15%;
+
+}
+
+.menujs li {
+	display: block;
+	border-bottom: solid grey 1px;
+	width: 100%;
+	padding: 0;
+
+}
+
+
+
+}
